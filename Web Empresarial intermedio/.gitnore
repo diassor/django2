@@ -1,0 +1,18 @@
+crear un project django-admin startproject [nombre del proyecto]
+
+crear una app
+    python manage.py startapp [nombre de la app]
+
+que pasaria si tubieramos cada apps con sus urls como
+las registrariamos en el url.py principal?
+
+vamos a nuestra app y creamos un archivo.py para ser llamado
+por la url.py principal(webempresa) como hace el admin
+
+    desde la url.py principl,
+        from django.urls import path, include
+
+            urlpatterns = [
+                # path del core
+                path('core/', include('core.urls')),
+                ]
